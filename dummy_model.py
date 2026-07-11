@@ -14,5 +14,4 @@ class DummyModel(nn.Module):
         self.num_classes = num_classes
 
     def forward(self, z, t, r, y):
-        # 忽略 t, r, y，只用简单的卷积模拟结构
         return self.encoder(z)
