@@ -3,7 +3,6 @@ import torch.nn as nn
 
 
 class SpatialAlignmentModule(nn.Module):
-    """Spatial alignment module: learns an H x W x 1 spatial gate."""
 
     def __init__(self, channels):
         super().__init__()
@@ -20,7 +19,6 @@ class SpatialAlignmentModule(nn.Module):
 
 
 class ChannelAlignmentModule(nn.Module):
-    """Channel alignment module: learns a 1 x 1 x C channel gate."""
 
     def __init__(self, channels, reduction=4):
         super().__init__()
@@ -39,8 +37,6 @@ class ChannelAlignmentModule(nn.Module):
 
 
 class FeatureGateFusion(nn.Module):
-    """Element-wise gate fusion used by the alignment branches."""
-
     def forward(self, target_feature, reference_feature):
         gate = torch.sigmoid(target_feature * reference_feature)
         return target_feature * gate + reference_feature * (1.0 - gate)
