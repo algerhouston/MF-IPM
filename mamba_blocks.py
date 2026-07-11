@@ -7,10 +7,6 @@ from alignment_modules import ChannelAlignmentModule, SpatialAlignmentModule
 
 
 class StateSpaceBlock(nn.Module):
-    """Dependency-free SSM-like block used as a Mamba placeholder.
-
-    It keeps the module API stable while avoiding a hard dependency on mamba-ssm.
-    """
 
     def __init__(self, channels, expansion=2, kernel_size=7):
         super().__init__()
@@ -37,7 +33,6 @@ class StateSpaceBlock(nn.Module):
 
 
 class CrossModalFusionMamba(nn.Module):
-    """Cross-modal fusion Mamba with internal SAM and CAM."""
 
     def __init__(self, channels, num_blocks=2):
         super().__init__()
@@ -64,7 +59,6 @@ class CrossModalFusionMamba(nn.Module):
 
 
 class FrequencySpatialHomogenizationMamba(nn.Module):
-    """Frequency-spatial homogenization Mamba from the orange block."""
 
     def __init__(self, channels, num_blocks=2):
         super().__init__()
