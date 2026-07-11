@@ -81,7 +81,7 @@ The datasets used in our training and testing are orgnized as follows:
 
 [FastMRI](https://fastmri.med.nyu.edu/) dataset is one of the largest open-source MRI datasets, providing raw fully sampled k-space data. It primarily includes knee and brain MRI scans with T1-weighted, T2-weighted, and proton density-weighted sequences.
 
-The in-house clinical data were obtained from Gongli Hospital in the Shanghai Pudong New Area and included two datasets: brain and knee. These datasets were collected using the Vantage Titan 3.0T MRI scanner produced by Canon, Japan. For the brain dataset, data from 234 patients were collected, including PDFS, T1WI, and T2WI modalities, with a slice thickness of 4 mm and an inter-slice gap of 1 mm. For the knee dataset, data from 147 patients were acquired using a specially configured 4-channel phased array coil, including T2WI-FS, T1WI, and T2WI modalities.
+The in-house clinical data were obtained from Gongli Hospital in the Shanghai Pudong New Area and included two datasets: brain and knee. These datasets were collected using the Vantage Titan 3.0T MRI scanner produced by Canon, Japan.
 
 ## <a name="cite"></a> 🥰 Citation
 
