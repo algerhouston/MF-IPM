@@ -5,7 +5,6 @@ from mri_ops import data_consistency
 
 
 class RDecoder(nn.Module):
-    """Reconstruction decoder with optional data consistency."""
 
     def __init__(self, feature_channels=32, out_channels=1, depth=2):
         super().__init__()
