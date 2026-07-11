@@ -4,7 +4,6 @@ from crc import ConvReluConv
 
 
 class REncoder(nn.Module):
-    """Shared R-Encoder for target/reference image branches."""
 
     def __init__(self, in_channels=1, feature_channels=32, depth=2):
         super().__init__()
