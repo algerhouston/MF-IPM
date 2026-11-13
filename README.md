@@ -10,7 +10,7 @@
 
 ## 📑 Contents
 
-- [Visual Results](#visual_results)
+- [🧩](#-overview)
 - [News](#news)
 - [Results](#results)
 - [Installation](#installation)
@@ -19,7 +19,7 @@
 
 
 
-## <a name="Real-SR"></a> 🥇 The proposed MF-IPM architecture
+## <a name="#-overview"></a> 🥇 The proposed MF-IPM architecture
 
 
 <p align="center">
@@ -29,12 +29,13 @@
 
 ## <a name="news"></a> 🆕 News
 
-- **2026-7-11:** The code is being uploaded. 😄
 - **2026-11-13:** The repository is updated to reflect the modifications in the revised manuscript. 📝
+
+- **2026-7-11:** The code is being uploaded. 😄
 
 ## <a name="results"></a>🔍 Results
 
-We achieve state-of-the-art performance on various dataset. Detailed results can be found in the paper.
+We achieve state-of-the-art performance on multiple dataset. Detailed results can be found in the paper.
 
 <details>
 <summary>Evaluation on IXI dataset (click to expand)</summary>
@@ -88,7 +89,7 @@ The datasets used in our training and testing are orgnized as follows:
 
 [FastMRI](https://fastmri.med.nyu.edu/) dataset is one of the largest open-source MRI datasets, providing raw fully sampled k-space data. It primarily includes knee and brain MRI scans with T1-weighted, T2-weighted, and proton density-weighted sequences.
 
-The in-house clinical data were obtained from Gongli Hospital in the Shanghai Pudong New Area and included two datasets: brain and knee. These datasets were collected using the Vantage Titan 3.0T MRI scanner produced by Canon, Japan.
+The in-house clinical data were obtained from Gongli Hospital in the Shanghai Pudong New Area and included two datasets: brain and shoulder. These datasets were collected using the Vantage Titan 3.0T MRI scanner produced by Canon, Japan.
 
 ## <a name="cite"></a> 🥰 Citation
 
