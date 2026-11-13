@@ -50,6 +50,15 @@ We achieve state-of-the-art performance on various dataset. Detailed results can
 </p>
 </details>
 
+MF-IPM reconstruction results, reported as **PSNR (dB) / SSIM**. Values are means on the corresponding test sets. Standard deviations, comparisons with other methods, and experimental settings are provided in the paper.
+
+| Sampling pattern | Acceleration | IXI | fastMRI | In-house brain | In-house shoulder |
+|:--|:--:|:--:|:--:|:--:|:--:|
+| Cartesian | ×4 | 39.64 / 0.987 | 37.58 / 0.975 | 38.98 / 0.989 | 38.03 / 0.980 |
+| Cartesian | ×8 | 38.77 / 0.971 | 36.65 / 0.959 | 37.06 / 0.972 | 37.10 / 0.963 |
+| Radial | ×4 | 39.12 / 0.982 | 37.08 / 0.970 | 38.49 / 0.981 | 37.53 / 0.971 |
+| Radial | ×8 | 38.45 / 0.971 | 36.38 / 0.959 | 37.80 / 0.972 | 36.83 / 0.963 |
+| Random point | ×4 | 39.22 / 0.983 | 37.11 / 0.971 | 38.49 / 0.985 | 37.56 / 0.975 |
 
 ## <a name="installation"></a> Installation
 
