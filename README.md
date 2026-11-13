@@ -1,9 +1,9 @@
-## Mean flow-inertial proximal Mamba network with frequency-spatial homogenization for multi-modal MRI reconstruction
+## Mean flow-informed proximal Mamba network with frequency-spatial homogenization for multi-modal MRI reconstruction
 
 
 
 
-> **Abstract:**  Multi-modal magnetic resonance imaging (MRI) reconstruction aims to recover target-modality images from undersampled data by leveraging reference modalities as prior information. However, existing approaches often rely on point-to-point mappings, overlooking the optimization trajectory, which can degrade reconstruction accuracy. Moreover, spatial–frequency inconsistencies introduce redundant features, while insufficient cross-modal integration leads to structural distortions. To address these challenges, we propose a mean flow-inertial proximal Mamba network (MF-IPM) with frequency–spatial homogenization. Specifically, we design a mean flow-inertial proximal algorithm that models the reconstruction process as a learnable velocity field, introducing a mean velocity term to simulate iterative optimization. A reference-modality-guided inertial term is further incorporated to effectively embed auxiliary modality information into the reconstruction dynamics. We further combine the MeanFlow-based average-velocity principle with inertial proximal iteration to formulate a trajectory-aware objective for multi-modal MRI reconstruction. To balance global perception and computational efficiency, the algorithm is unfolded into a Mamba-based architecture. For effective multi-modal fusion, we introduce the cross-modal fusion Mamba (CMFM) to enable bi-directional spatial–channel interaction and semantic alignment. Additionally, the frequency-spatial homogenization Mamba (FSHM) is proposed to suppress redundancy through joint spatial–frequency analysis using learnable homogenization factors. Extensive experiments on public and in-house datasets under various acceleration rates demonstrate the superiority of MF-IPM. 
+> **Abstract:**  Multi-modal magnetic resonance imaging (MRI) reconstruction aims to recover target-modality images from undersampled data by leveraging reference modalities as prior information. However, existing approaches often rely on point-to-point mappings, overlooking the optimization trajectory, which can degrade reconstruction accuracy. Moreover, spatial–frequency inconsistencies introduce redundant features, while insufficient cross-modal integration leads to structural distortions. To address these challenges, we propose a mean flow-informed proximal Mamba network (MF-IPM) with frequency–spatial homogenization. Specifically, MF-IPM combines a discrete reference-guided proximal reconstruction pathway with stage-wise mean flow supervision. The reconstruction pathway incorporates complementary reference-modality information, while the mean flow formulation provides average-velocity supervision at each unfolding stage during training. The mean flow loss is jointly optimized with the reconstruction objectives. The resulting architecture employs Mamba-based modules for cross-modal interaction and frequency-spatial feature modeling, followed by a final data-consistency layer that preserves the acquired target-modality measurements. For effective multi-modal fusion, we introduce the cross-modal fusion Mamba (CMFM) to enable bi-directional spatial–channel interaction and semantic alignment. Additionally, the frequency-spatial homogenization Mamba (FSHM) is proposed to suppress redundancy through joint spatial–frequency analysis using learnable homogenization factors. Extensive experiments on public and in-house datasets under various acceleration rates demonstrate the superiority of MF-IPM. Compared with the best competing results, MF-IPM achieves average gains of 0.60 dB in PSNR and 0.0060 in SSIM on the public datasets, and 0.57 dB in PSNR and 0.0054 in SSIM on the in-house datasets. The code is publicly available at https://github.com/algerhouston/MF-IPM.
 
 ⭐If this work is helpful for you, please help star this repo. Thanks!🤗
 
@@ -30,7 +30,7 @@
 ## <a name="news"></a> 🆕 News
 
 - **2026-7-11:** The code is being uploaded. 😄
-
+- **2026-11-13:** The repository is updated to reflect the modifications in the revised manuscript. 📝
 
 ## <a name="results"></a>🔍 Results
 
@@ -71,8 +71,6 @@ One can also create a new anaconda environment, and then install necessary pytho
 ```
 conda install requirements.txt
 ```
-
-
 ## Datasets
 
 The datasets used in our training and testing are orgnized as follows:
