@@ -23,7 +23,7 @@
 
 
 <p align="center">
-    <img src="MF-IPM.png" style="border-radius: 15px">
+    <img src="MF-IPM-1.png" style="border-radius: 15px">
 </p>
 
 
